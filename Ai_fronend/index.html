@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HungryMan Delivery Network</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">🍔</span>
+        <span>HungryMan Delivery Network</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="menu.html">Menu</a>
+        <a href="tracking.html">Tracking</a>
+        <a href="login.html" class="button button-secondary">Sign In</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-dark hero-home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Fast, Fresh, and Reliable</p>
+          <h1>HungryMan Delivery Network</h1>
+          <p>Order from top restaurants across Nigeria and get your favorites delivered in minutes.</p>
+          <form class="search-form" id="heroSearch" onsubmit="return false;">
+            <input type="search" placeholder="Search food or restaurants" id="heroSearchInput" />
+            <button type="submit">Search</button>
+          </form>
+          <div class="hero-stats">
+            <div>
+              <strong>24/7</strong>
+              <p>Delivery coverage</p>
+            </div>
+            <div>
+              <strong>500+</strong>
+              <p>Partner restaurants</p>
+            </div>
+            <div>
+              <strong>4.9</strong>
+              <p>Average rating</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-card">
+            <span class="tag">Top Pick</span>
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=80" alt="Food delivery" />
+            <div>
+              <h3>Signature Burger Combo</h3>
+              <p>Delivered hot and fresh to your door.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="featured-restaurants">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Featured</p>
+          <h2>Popular Restaurants</h2>
+        </div>
+        <a href="restaurants.html" class="link-button">View all</a>
+      </div>
+      <div class="card-grid">
+        <article class="card restaurant-card">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Restaurant" />
+          <div class="card-body">
+            <h3>City Grill</h3>
+            <p>Fast delivery, tasty local favorites.</p>
+            <div class="card-meta">
+              <span>4.8 ★</span>
+              <span>30-40 mins</span>
+            </div>
+          </div>
+        </article>
+        <article class="card restaurant-card">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Restaurant" />
+          <div class="card-body">
+            <h3>Spice Route</h3>
+            <p>Authentic flavors across Nigeria.</p>
+            <div class="card-meta">
+              <span>4.9 ★</span>
+              <span>25-35 mins</span>
+            </div>
+          </div>
+        </article>
+        <article class="card restaurant-card">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Restaurant" />
+          <div class="card-body">
+            <h3>Ocean Bites</h3>
+            <p>Seafood specialties delivered fresh.</p>
+            <div class="card-meta">
+              <span>4.7 ★</span>
+              <span>30-45 mins</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="popular-menu">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Popular</p>
+            <h2>Top Picks for You</h2>
+          </div>
+        </div>
+        <div class="card-grid">
+          <article class="card food-card">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=80" alt="Food" />
+            <div class="card-body">
+              <h3>Jollof Rice & Chicken</h3>
+              <p>Classic Nigerian comfort meal.</p>
+              <p class="price">₦2,800</p>
+            </div>
+          </article>
+          <article class="card food-card">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Food" />
+            <div class="card-body">
+              <h3>Sushi Rolls</h3>
+              <p>Fresh ingredients, chef-made.</p>
+              <p class="price">₦4,100</p>
+            </div>
+          </article>
+          <article class="card food-card">
+            <img src="https://images.unsplash.com/photo-1514516870928-51d14fd5f9d9?auto=format&fit=crop&w=600&q=80" alt="Food" />
+            <div class="card-body">
+              <h3>Pizza Supreme</h3>
+              <p>Loaded with savory toppings.</p>
+              <p class="price">₦3,500</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="testimonials">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Reviews</p>
+          <h2>Happy Customers</h2>
+        </div>
+      </div>
+      <div class="card-grid testimonials-grid">
+        <article class="card testimonial-card">
+          <p>"Fast delivery, amazing food, and the app is so easy to use. HungryMan is my go-to service."</p>
+          <h4>Amaka E.</h4>
+          <span>Nigeria</span>
+        </article>
+        <article class="card testimonial-card">
+          <p>"Great selection of restaurants and the drivers always arrive on time. Highly recommended."</p>
+          <h4>Chinedu K.</h4>
+          <span>Lagos</span>
+        </article>
+        <article class="card testimonial-card">
+          <p>"The customer support is excellent and my orders are always fresh. Delivery coverage all over Nigeria."</p>
+          <h4>Halima M.</h4>
+          <span>Abuja</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark stats-section">
+      <div class="container stats-grid">
+        <div>
+          <h3>10K+</h3>
+          <p>Orders delivered daily</p>
+        </div>
+        <div>
+          <h3>All Nigeria</h3>
+          <p>Delivery coverage nationwide</p>
+        </div>
+        <div>
+          <h3>98%</h3>
+          <p>Customer satisfaction</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container download-section">
+      <div class="download-copy">
+        <p class="eyebrow">Get the app</p>
+        <h2>Order quickly from your phone</h2>
+        <p>Download the HungryMan app for the fastest tracking and best deals.</p>
+        <div class="download-buttons">
+          <a href="#" class="button button-primary">Download App</a>
+          <a href="menu.html" class="button button-secondary">Browse Menu</a>
+        </div>
+      </div>
+      <div class="download-image">
+        <img src="https://images.unsplash.com/photo-1533777324565-a040eb52fac2?auto=format&fit=crop&w=600&q=80" alt="Mobile app" />
+      </div>
+    </section>
+
+    <section class="section section-dark contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Reach HungryMan Delivery Network</h2>
+          <p>Questions about your order or delivery coverage? We are available across Nigeria.</p>
+        </div>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p><a href="mailto:sanusizaynab100@gmail.com">sanusizaynab100@gmail.com</a></p>
+          </div>
+          <div class="contact-card">
+            <h3>Phone</h3>
+            <p><a href="tel:09055349218">09055349218</a></p>
+          </div>
+          <div class="contact-card">
+            <h3>Coverage</h3>
+            <p>All Nigeria</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 HungryMan Delivery Network. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="menu.html">Menu</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

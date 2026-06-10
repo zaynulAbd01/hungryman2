@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - HungryMan Delivery Network</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">🚚🍔</span>
+        <span>HungryMan Delivery Network</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="menu.html">Menu</a>
+        <a href="tracking.html">Tracking</a>
+        <a href="login.html" class="button button-secondary">Sign In</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-dark auth-section">
+      <div class="container auth-grid">
+        <div class="auth-copy">
+          <p class="eyebrow">Welcome back</p>
+          <h1>Login to your HungryMan account</h1>
+          <p>Access your orders, saved favorites, and delivery tracking in one place.</p>
+        </div>
+        <form id="loginForm" class="auth-form" novalidate>
+          <label for="loginEmail">Email</label>
+          <input id="loginEmail" type="email" placeholder="you@example.com" required />
+          <label for="loginPassword">Password</label>
+          <input id="loginPassword" type="password" placeholder="Enter your password" required />
+          <div class="form-row remember-row">
+            <label><input type="checkbox" id="rememberMe" /> Remember me</label>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" class="button button-primary">Login</button>
+          <p class="auth-note">Don't have an account? <a href="signup.html">Sign up</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 HungryMan Delivery Network. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

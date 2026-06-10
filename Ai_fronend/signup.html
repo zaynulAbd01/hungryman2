@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - HungryMan Delivery Network</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">🚚🍔</span>
+        <span>HungryMan Delivery Network</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="menu.html">Menu</a>
+        <a href="tracking.html">Tracking</a>
+        <a href="login.html" class="button button-secondary">Sign In</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-dark auth-section">
+      <div class="container auth-grid">
+        <div class="auth-copy">
+          <p class="eyebrow">Create account</p>
+          <h1>Sign up for HungryMan Delivery</h1>
+          <p>Join now and start ordering your favorite meals across Nigeria.</p>
+        </div>
+        <form id="signupForm" class="auth-form" novalidate>
+          <label for="fullName">Full name</label>
+          <input id="fullName" type="text" placeholder="John Doe" required />
+          <label for="signupEmail">Email</label>
+          <input id="signupEmail" type="email" placeholder="you@example.com" required />
+          <label for="phoneNumber">Phone number</label>
+          <input id="phoneNumber" type="tel" placeholder="09012345678" required />
+          <label for="signupPassword">Password</label>
+          <input id="signupPassword" type="password" placeholder="Create a password" required />
+          <label for="confirmPassword">Confirm password</label>
+          <input id="confirmPassword" type="password" placeholder="Repeat your password" required />
+          <button type="submit" class="button button-primary">Sign Up</button>
+          <p class="auth-note">Already have an account? <a href="login.html">Login</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 HungryMan Delivery Network. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Tracking - HungryMan Delivery Network</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">🚚🍔</span>
+        <span>HungryMan Delivery Network</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="menu.html">Menu</a>
+        <a href="tracking.html" class="active">Tracking</a>
+        <a href="login.html" class="button button-secondary">Sign In</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-dark tracking-hero">
+      <div class="container">
+        <p class="eyebrow">Track Order</p>
+        <h1>Real-time delivery tracking</h1>
+        <p>Enter your order ID to see the status and estimated delivery time.</p>
+        <div class="tracking-form">
+          <input id="orderIdInput" type="text" placeholder="Enter Order ID" />
+          <button id="trackOrderButton" class="button button-primary">Track Order</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container tracking-panel">
+      <div class="tracking-status">
+        <div class="tracker-step" data-step="received">
+          <span class="step-number">1</span>
+          <div>
+            <h3>Order Received</h3>
+            <p>Your order has been accepted by the restaurant.</p>
+          </div>
+        </div>
+        <div class="tracker-step" data-step="preparing">
+          <span class="step-number">2</span>
+          <div>
+            <h3>Preparing Food</h3>
+            <p>The kitchen is cooking your meal now.</p>
+          </div>
+        </div>
+        <div class="tracker-step" data-step="assigned">
+          <span class="step-number">3</span>
+          <div>
+            <h3>Driver Assigned</h3>
+            <p>A driver is on the way to pick up your order.</p>
+          </div>
+        </div>
+        <div class="tracker-step" data-step="way">
+          <span class="step-number">4</span>
+          <div>
+            <h3>On The Way</h3>
+            <p>Your delivery is en route to your address.</p>
+          </div>
+        </div>
+        <div class="tracker-step" data-step="delivered">
+          <span class="step-number">5</span>
+          <div>
+            <h3>Delivered</h3>
+            <p>Your meal has arrived. Enjoy!</p>
+          </div>
+        </div>
+      </div>
+      <div class="tracking-summary">
+        <h2>Estimated delivery</h2>
+        <p id="estimatedTime">Enter an order ID to view your delivery estimate.</p>
+        <div class="progress-bar" id="orderProgressBar">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 HungryMan Delivery Network. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="restaurants.html">Restaurants</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
